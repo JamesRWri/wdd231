@@ -14,17 +14,17 @@
       <a href="parkUrl">[park name]</a>
     </p>
     <div class="skip-links" aria-label="short-cut links" role="navigation">
-    <ul>
-    <li>
-     <a
-      href="#global-nav-toggle"
+      <ul>
+        <li>
+          <a
+            href="#global-nav-toggle"
             aria-label="Skip to global NPS navigation"
             >Skip to global NPS navigation</a
           >
         </li>
         <li>
-          <a href="#local-nav" aria-label="Skip to park navigation"
-            >Skip to park navigation</a
+          <a href="#local-nav" aria-label="Skip to this park navigation"
+            >Skip to this park navigation</a
           >
         </li>
         <li>
@@ -69,49 +69,41 @@
         </div>
       </section>
       <section id="park-header">
-       <div class="hero-banner">
-      <img
-          src="https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg"
-          alt="Park landscape"
-        />
-       <div class="hero-banner__content">
-      <a href="/" class="hero-banner__title">Yellowstone</a>
-          <p class="hero-banner__subtitle">
-            <span>National Park</span>
-            <span>WY, MT, ID</span>
-          </p>
+        <div class="hero-banner">
+          <img src="" alt="" />
+          <div class="hero-banner__content">
+          </div>
         </div>
-      </div>
         <nav class="park-nav">
           <ul>
-          <li>
-             <a href="#">
-              <span>Info</span>
+            <li>
+              <a href="#">
+                <span>Info</span>
                 <svg class="icon" role="presentation" focusable="false">
                   <use
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-             xlink:href="/images/sprite.symbol.svg#info"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#info"
                   ></use>
-           </svg>
+                </svg>
               </a>
             </li>
             <li>
               <a href="#">
-            <span>Alerts</span>
+                <span>Alerts</span>
                 <svg class="icon" role="presentation" focusable="false">
                   <use
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-             xlink:href="/images/sprite.symbol.svg#alert"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/images/sprite.symbol.svg#alert"
                   ></use>
                 </svg>
-         </a>
+              </a>
             </li>
             <li>
               <a href="#">
                 <span>Maps</span>
                 <svg class="icon" role="presentation" focusable="false">
                   <use
-              xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
                     xlink:href="/images/sprite.symbol.svg#location"
                   ></use>
                 </svg>
@@ -134,7 +126,7 @@
                 <svg class="icon" role="presentation" focusable="false">
                   <use
                     xmlns:xlink="http://www.w3.org/1999/xlink"
-          xlink:href="/images/sprite.symbol.svg#fee-22"
+                    xlink:href="/images/sprite.symbol.svg#fee-22"
                   ></use>
                 </svg>
               </a>
@@ -143,7 +135,10 @@
         </nav>
       </section>
     </header>
-    <main id="main"></main>
-    <footer id="park-footer"></footer>
+    <main id="main">
+      <section class="intro"></section>
+      <section class="info"></section>
+    </main>
+    <footer id="park-footer" class="park-footer"></footer>
   </body>
 </html>
