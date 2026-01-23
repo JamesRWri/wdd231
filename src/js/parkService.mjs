@@ -201,10 +201,6 @@ export const parkInfoLinks = [
   }
 ];
 
-export function getParkData() {
-  return park;
-}
-
 const baseUrl = "https://developer.nps.gov/api/v1/";
 const apiKey = import.meta.env.VITE_NPS_API_KEY;
 
@@ -215,20 +211,10 @@ async function getJson(url) {
       "X-Api-Key": apiKey
     }
   };
-  let data = {};
-  const response = await fetch(baseUrl + url, options);
-  if (response.ok) {
-    data = await response.json();
-  } else throw new Error("response not ok");
-  return data;
-}
 
-export function getInfoLinks(data) {
-  const withUpdatedImages = parkInfoLinks.map((item, index) => {
-    item.image = data[index + 2].url;
-    return item;
-  });
-  return withUpdatedImages;
+  const response = await fetch(baseUrl + url, options);
+  if (!response.ok) throw new Error("response not ok");
+  return await response.json();
 }
 
 export async function getParkData() {
